@@ -1,0 +1,29 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body> 
+	<div class="badge-form">
+
+
+		<img id="badge-image" />
+
+    <div class="first-name form-elem">
+      <input type="text" id="first-name" onkeydown="showHelp(this.value)" placeholder="First Name + Initial" onchange="setFirst(this.value)"/>
+      <div class="muted-text">Enter first name +  last initial</div>
+    </div>
+
+    <div class="last-init form-elem">
+     <button disabled="disabled" onclick="printBadge()">Print Your Badge</button>
+    </div>
+
+	<div>
+
+
+</body>
+
+</html>

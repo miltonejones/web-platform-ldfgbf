@@ -1,0 +1,62 @@
+body {
+  background: white;
+}
+
+.badge-form {
+  display: grid;
+  grid-template-rows: 1fr 56px;
+  grid-template-columns: 208px 1fr;
+  grid-template-areas: "photo photo" "first last";
+}
+button {
+  font-size: 1.3rem;
+  background-color: #37a;
+  color: white;
+  border-radius: .3em;
+  padding: 6px 24px;
+  margin: 2px;
+  border: solid 1px #bbb;
+}
+button[disabled] {
+  background-color: gray;
+  color: #999;
+}
+
+.form-elem {
+  padding: 8px 0;
+}
+.badge-form.printing .form-elem {
+  display: none;
+}
+input ,
+input:active {
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+  max-width: 200px;
+  border-bottom: solid 1px gray;
+  background: transparent;
+}
+
+img {
+  grid-area: photo;
+}
+
+.first-name {
+  grid-area: first;
+}
+
+.first-name .muted-text {
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+
+.last-init {
+  grid-area: last;
+}
+
+#badge-image {
+  width: 400px;
+  height: auto;
+}
